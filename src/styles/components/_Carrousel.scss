@@ -1,0 +1,36 @@
+.carrouselContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    top: 128px;
+    left: 100px;
+
+    .iconeContent {
+        .fas .fa-chevron-left {
+            position: absolute;
+            top: 156px;
+            left: 23px;
+            width: 46px;
+            height: 79px;
+            color: $color-8;
+        }
+
+        .fas .fa-chevron-right {
+            position: absolute;
+            top: 156px;
+            right: 23px;
+            width: 46px;
+            height: 79px;
+            color: $color-8;
+        }
+
+    }
+
+}

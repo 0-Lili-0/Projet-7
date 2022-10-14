@@ -1,0 +1,21 @@
+.tag {
+    position: relative;
+    width: 115px;
+    height: 25px;
+    background: $color-1;
+
+    .tag-text {
+        position: absolute;
+        width: 71px;
+        height: 20px;
+        top: 3px;
+        left: 22px;
+
+        p {
+            color: $color-8;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 10px;
+        }
+    }
+}

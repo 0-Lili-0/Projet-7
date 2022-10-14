@@ -1,0 +1,25 @@
+.about {
+
+    .aboutContainer {
+
+        img {
+            position: absolute;
+            width: 1240px;
+            height: 223px;
+            top: 152px;
+            left: 100px;
+            border-radius: 25px;
+        }
+
+        img::before {
+            mix-blend-mode: darken;
+            opacity: 0.03;
+        }
+
+        .collapseContainer {
+            position: absolute;
+            top: 406px;
+            left: 208px;
+        }
+    }
+}

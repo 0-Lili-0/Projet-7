@@ -1,0 +1,28 @@
+.bannerContent {
+
+    img {
+        position: absolute;
+        width: 1240px;
+        height: 223px;
+        top: 171px;
+        left: 100px;
+        border-radius: 25px;
+    }
+
+    img::before {
+        mix-blend-mode: darken;
+        opacity: 0.03;
+    }
+
+    .title {
+        position: absolute;
+        width: 705px;
+        height: 68px;
+        top: 249px;
+        left: 373px;
+        color: $color-6;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 68px;
+    }
+}

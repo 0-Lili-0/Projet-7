@@ -1,0 +1,52 @@
+.footer {
+    position: absolute;
+    top: 4333px;
+    left: 0px;
+    width: 1440px;
+    height: 209px;
+    background: $color-7;
+
+    img {
+        width: 122px;
+        height: 40px;
+        position: absolute;
+        left: 45%;
+        right: 45%;
+        top: 34%;
+        bottom: 49%;
+        color: $color-6;
+    }
+
+    .copyright {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        text-align: center;
+        color: $color-6;
+        size: 24px;
+        line-height: 34px;
+        font-weight: 500;
+        font-style: normal;
+        position: absolute;
+        left: 40%;
+        right: 41%;
+        top: 64%;
+        bottom: 13%;
+
+        i {
+            color: $color-6;
+            position: absolute;
+            top: 33%;
+            bottom: 13%;
+        }
+
+        p {
+            color: $color-6;
+        }
+
+
+    }
+}
