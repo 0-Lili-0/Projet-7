@@ -1,101 +1,15 @@
 .ficheLogement {
-
+    position: relative;
     .ficheContent {
-        position: relative;
-
-        .carrousel {
+            .carousel {
             position: absolute;
-            width: 1240px;
-            height: 415px;
-            border-radius: 25px;
             top: 128px;
             left: 100px;
-        }
-    }
-
-    .titleContent {
-        .title {
-            position: absolute;
-            width: 635px;
-            height: 51px;
-            top: 573px;
-            left: 100px;
-
-            h2 {
-                color: $color-1;
-                font-size: 36px;
-                font-weight: 500;
-                line-height: 51px;
-            }
-        }
-
-        .location {
-            position: absolute;
-            width: 176px;
-            height: 26px;
-            top: 624px;
-            left: 100px;
-
-            h3 {
-                color: $color-1;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 25px;
-            }
-        }
-
-        .host {
-            position: absolute;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            text-align: right;
-
-            .hostName {
-                color: $color-1;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 25px;
-                margin-right: 10px;
-            }
-
-            .hostPicture {
-                img {
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50%;
-                    background: $color-5;
+            
+                        .titleContent {
+                h2 {
+                        color: $color-1;
                 }
-            }
-        }
-
-    }
-
-    .tagContent {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-
-    }
-
-    .equipmentContent {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        position: absolute;
-        top: 719px;
-        left: 100px;
-        margin-right: 76px;
+                        }
     }
 }
