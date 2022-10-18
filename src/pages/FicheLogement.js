@@ -18,40 +18,34 @@ const FicheLogement = () => {
     const range = [1, 2, 3, 4, 5];
 
     return (
-        <div className='ficheLogement'>
+        <div>
             <Header />
-            <div className="ficheContent">
-                <div className='carouselContent'>
-                    <Carousel />
-                </div>
-                <div className="titleContent">
-                    <h2 className='title'>{title}</h2>
-                    <h3 className='location'>{location}</h3>
-                    <span className='host'>
-                        <p className='hostName'>{host.name}</p>
-                        <img className="hostPicture" src={host.picture} alt={host.name} />
-                    </span>
-                </div>
-                <div className="tagContent">
-                    <span className='tags'>{tags}</span>
-                    <span className='rangeContent'>
-                        {range.map((star) => rating >= star ? (
-                            <img src="../media/etoile.png" key={star.toString()} alt="etoile" className='stars-red' />) : (
-                            <img src='../media/star-grey.png' key={star.toString()} alt="etoile" className='stars-grey' />
-                        )
-                        )}
-                    </span>
-                </div>
-                <div className="equipementContent">
-                    <div className="collapse">
-                        <Collapse label="Description">
-                            <p>{description}</p>
-                        </Collapse>
-                        <Collapse label="Equipements">
-                            <p>{equipements}</p>
-                        </Collapse>
-                    </div>
-                </div>
+            <Carousel />
+            <div className="titleContent">
+                <h2 className='title'>{title}</h2>
+                <h3 className='location'>{location}</h3>
+                <span className='host'>
+                    <p className='hostName'>{host.name}</p>
+                    <img className="hostPicture" src={host.picture} alt={host.name} />
+                </span>
+            </div>
+            <div className="tagContent">
+                <span className='tags'>{tags}</span>
+                <span className='rangeContent'>
+                    {range.map((star) => rating >= star ? (
+                        <img src="../media/etoile.png" key={star.toString()} alt="etoile" className='stars-red' />) : (
+                        <img src='../media/star-grey.png' key={star.toString()} alt="etoile" className='stars-grey' />
+                    )
+                    )}
+                </span>
+            </div>
+            <div className="equipementContent">
+                <Collapse label="Description">
+                    <p>{description}</p>
+                </Collapse>
+                <Collapse label="Equipements">
+                    <p>{equipements}</p>
+                </Collapse>
             </div>
             <Footer />
         </div>

@@ -13,8 +13,8 @@ const Collapse = (props) => {
                     {props.label}
                 </div>
                 <button className='toggle' onClick={onClickHandler}> 
-                    {!isOpen ? (<i class="fas fa-chevron-down"></i>)
-                        : (<i class="fas fa-chevron-up"></i>)}
+                    {!isOpen ? (<i className="fas fa-chevron-down"></i>)
+                        : (<i className="fas fa-chevron-up"></i>)}
                 </button>  
             </div>
             <div className={!isOpen ? "content" : "content-show"}>

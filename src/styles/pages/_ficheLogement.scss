@@ -1,15 +1,58 @@
-.ficheLogement {
-    position: relative;
-    .ficheContent {
-            .carousel {
-            position: absolute;
-            top: 128px;
-            left: 100px;
-            
-                        .titleContent {
-                h2 {
-                        color: $color-1;
+.carousel {
+    position: absolute;
+    top: 128px;
+    left: 100px;
+    width: 1240px;
+        height: 415px;
+    }
+.titleContent {
+    position: absolute;
+        top: 573px;
+        left: 100px;
+    }
+    
+    .tagContent {
+        position: absolute;
+        top: 670px;
+        left: 100px;
+    }
+    
+    .equipementContent {
+        position: absolute;
+        top: 719px;
+        left: 100px;
+        display: flex;
+        justify-content: space-between;
+    
+        .equipementContent .collapse {
+            width: 582px;
+            height: 52px;
+            border-radius: 10px;
+    
+            .collapse .collapseTitle .name {
+                width: 106px;
+                height: 26px;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                font-size: 18px;
+            }
+    
+            .collapse .collapseTitle .toggle {
+                width: 15px;
+                height: 26px;
+    
+                i {
+                    font-size: 18px;
+                    position: absolute;
+                    top: 17px;
+                    left: 543px;
+                }
                 }
                         }
     }
+.equipementContent .collapse .content {
+    width: 582px;
+    height: auto;
+    border-radius: 10px;
 }
