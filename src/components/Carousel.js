@@ -16,7 +16,7 @@ const Carrousel = () => {
     const prevPictures = () => {
         setUseCurrent(useCurrent === 0 ? pictures.length - 1 : useCurrent - 1)
     }
-    console.log(allPictures.pictures.length)
+
     return (
         <div className='carousel'>
             <div className="carouselContainer">

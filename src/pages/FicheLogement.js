@@ -15,10 +15,10 @@ const FicheLogement = () => {
     if (!details) {
         return (<NotFound />);
     }
-    //const tags = logements.tags.map(tag => <li key={tag}>{tag}</li>)
+
     const { title, location, host, rating, tags, description, equipments } = details;
     const range = [1, 2, 3, 4, 5];
-    console.log(tags)
+    const equipmentList = equipments.map((equipment => <li>{equipment}</li>))
     return (
         <div>
             <Header />
@@ -57,7 +57,7 @@ const FicheLogement = () => {
                     <p>{description}</p>
                 </Accordion>
                 <Accordion label="Equipements">
-                    <p className='listeEquipments'>{equipments}</p>
+                    <li className='listeEquipments'>{equipmentList}</li>
                 </Accordion>
             </div>
             <Footer />
