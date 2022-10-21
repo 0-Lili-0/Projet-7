@@ -11,16 +11,16 @@ const Header = () => {
                 <img src={Img} alt="logo kasa" />
             </div>
             
-            <nav className="nav">
+            <div className="navigation">
                 <ul>
-                    <NavLink to="/" exact className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
+                    <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                            <li className='accueil'>Accueil</li>
                     </NavLink>
-                    <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
+                    <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                             <li className='aPropos'>A propos</li>
                     </NavLink>
                 </ul>
-            </nav>
+            </div>
 
         </div>
     );

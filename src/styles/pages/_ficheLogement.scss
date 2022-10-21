@@ -3,56 +3,131 @@
     top: 128px;
     left: 100px;
     width: 1240px;
-        height: 415px;
+    height: 415px;
     }
 .titleContent {
     position: absolute;
-        top: 573px;
-        left: 100px;
-    }
+    top: 573px;
+      left: 100px;
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
     
-    .tagContent {
-        position: absolute;
-        top: 670px;
-        left: 100px;
-    }
-    
-    .equipementContent {
-        position: absolute;
-        top: 719px;
-        left: 100px;
+      .titleContenair {
         display: flex;
-        justify-content: space-between;
+        flex-flow: column nowrap;
     
-        .equipementContent .collapse {
-            width: 582px;
-            height: 52px;
-            border-radius: 10px;
+        .title {
+          color: $color-1;
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 51px;
+          height: 51px;
+        }
     
-            .collapse .collapseTitle .name {
-                width: 106px;
-                height: 26px;
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                font-size: 18px;
-            }
+        .location {
+          color: $color-1;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 25px;
+          height: 26px;
+          margin: 0;
+        }
+      }
     
-            .collapse .collapseTitle .toggle {
-                width: 15px;
-                height: 26px;
+      .host {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 1078px;
     
-                i {
-                    font-size: 18px;
-                    position: absolute;
-                    top: 17px;
-                    left: 543px;
-                }
-                }
-                        }
-    }
-.equipementContent .collapse .content {
-    width: 582px;
-    height: auto;
-    border-radius: 10px;
+        .hostName {
+          left: 1170px;
+          font-size: 18px;
+          color: $color-1;
+          font-weight: 500;
+          line-height: 25px;
+          width: 93px;
+          height: 52px;
+        }
+    
+        .hostPicture {
+          left: 1273px;
+          border-radius: 50%;
+          width: 64px;
+          height: 64px;
+        }
+      }
 }
+
+.tagContent {
+  position: absolute;
+  top: 670px;
+  left: 100px;
+    display: flex;
+      width: auto;
+    
+      .tag {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        .tag-text {
+          font-size: 14px;
+          background: $color-1;
+          border-radius: 10px;
+          width: auto;
+          height: 25px;
+          padding: 5px 15px;
+        }
+      }
+    
+      .rangeContent {
+        display: flex;
+        position: absolute;
+        left: 1084px;
+      }
+}
+.equipementContent {
+  position: absolute;
+  top: 719px;
+  left: 100px;
+  display: flex;
+    gap: 6%;
+    
+      .container {
+        width: 582px;
+        margin: 0;
+        summary {
+            height: 52px;
+            width: 582px;
+            cursor: pointer;
+              font-size: 18px;
+            border-radius: 10px;
+            padding: 15px 20px;
+              position: relative;
+            
+              i {
+                position: absolute;
+                left: 543px;
+                top: 17px;
+            }
+                .content {
+                  width: 582px;
+                  height: auto;
+            padding: 10px 15px;
+              margin-top: 15px;
+            border-radius: 10px;
+            position: absolute;
+              top: 30px;
+              z-index: -1;
+            
+              span {
+                font-size: 18px;
+                padding: 10px 15px;
+            
+                }
+                }
+                }
+                }
+                }

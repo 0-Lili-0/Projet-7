@@ -1,0 +1,35 @@
+.container {
+  details {
+    border-radius: 5px;
+  }
+
+  details[open] {
+    visibility: visible;
+  }
+
+  details>summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary {
+    list-style: none;
+    background: $color-1;
+    position: absolute;
+    color: $color-8;
+    border-radius: 5px;
+  }
+
+  .content {
+    background: $color-3;
+    border-radius: 5px;
+    padding: 10px 15px;
+    overflow: hidden;
+
+
+    p {
+      color: $color-1;
+      font-size: 24px;
+      border-radius: 5px;
+    }
+  }
+}

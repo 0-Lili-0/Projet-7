@@ -12,7 +12,6 @@
     -ms-flex-direction: row;
     flex-direction: row;
 
-
     .logo {
         position: absolute;
         left: 0%;
@@ -25,7 +24,7 @@
         }
     }
 
-    .nav {
+        .navigation {
         position: absolute;
         width: 309px;
         height: 34px;
@@ -50,16 +49,6 @@
             flex-flow: row nowrap;
             list-style-type: none;
 
-            .nav-active {
-                text-decoration: underline;
-                color: $color-1;
-            }
-
-            .nav-inactive {
-                text-decoration: none;
-                color: $color-1;
-            }
-
             a {
                 text-decoration: none;
                 padding: 10px;
@@ -75,7 +64,6 @@
                     -webkit-transition: 0.2s;
                     -o-transition: 0.2s;
                     transition: 0.2s;
-
                     .accueil {
                         position: absolute;
                         width: 136px;
@@ -94,5 +82,9 @@
                 }
             }
         }
-    }
+                .nav-active {
+                    text-decoration: underline;
+                    color: $color-1;
+        }
+}
 }

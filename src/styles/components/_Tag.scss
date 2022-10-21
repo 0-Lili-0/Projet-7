@@ -1,17 +1,13 @@
 .tag {
-    position: relative;
-    width: 115px;
+    width: auto;
     height: 25px;
-    background: $color-1;
 
     .tag-text {
-        position: absolute;
-        width: 71px;
+        width: auto;
         height: 20px;
-        top: 3px;
-        left: 22px;
-
-        p {
+        background: $color-1;
+            border-radius: 10px;
+            span {
             color: $color-8;
             font-weight: 500;
             font-size: 14px;
