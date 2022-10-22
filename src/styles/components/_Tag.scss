@@ -1,17 +1,31 @@
 .tag {
+  width: auto;
+  height: 25px;
+  .tag-text {
     width: auto;
-    height: 25px;
-
-    .tag-text {
-        width: auto;
-        height: 20px;
-        background: $color-1;
-            border-radius: 10px;
-            span {
-            color: $color-8;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 10px;
-        }
+    height: 20px;
+    background: $color-1;
+    border-radius: 10px;
+    span {
+      color: $color-8;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 10px;
     }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width:395px) {
+  .tags {
+    width: 84px;
+    height: 18px;
+    .tag-text {
+      height: 18px;
+      padding: 1px 5px;
+      span {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+  }
 }

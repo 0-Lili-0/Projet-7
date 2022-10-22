@@ -1,91 +1,87 @@
 .header {
+  position: absolute;
+  max-width: 1240px;
+  height: 68px;
+  left: 100px;
+  top: 40px;
+  display: flex;
+  flex-direction: row;
+  .logo {
     position: absolute;
-    max-width: 1240px;
-    height: 68px;
-    left: 100px;
-    top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-
-    .logo {
-        position: absolute;
-        left: 0%;
-        right: 83.04%;
-        top: 0%;
-        bottom: 0%;
-
-        img {
-            height: 68px;
-        }
+    img {
+      width: 210px;
+      height: 68px;
     }
-
-        .navigation {
-        position: absolute;
-        width: 309px;
-        height: 34px;
-        top: 34px;
-        left: 931px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        text-align: right;
-        -ms-flex-line-pack: end;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-
-        ul {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-            list-style-type: none;
-
-            a {
-                text-decoration: none;
-                padding: 10px;
-                line-height: 34px;
-
-                li {
-                    color: $color-1;
-                    font-family: $font-1;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 24px;
-                    cursor: pointer;
-                    -webkit-transition: 0.2s;
-                    -o-transition: 0.2s;
-                    transition: 0.2s;
-                    .accueil {
-                        position: absolute;
-                        width: 136px;
-                        height: 34px;
-                        top: 17px;
-                        left: 931px;
-                    }
-
-                    .aPropos {
-                        position: absolute;
-                        width: 116px;
-                        height: 34px;
-                        top: 17px;
-                        left: 1124px;
-                    }
-                }
-            }
+  }
+  .navigation {
+    position: absolute;
+    width: 309px;
+    height: 34px;
+    top: 34px;
+    left: 980px;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+    font-size: 24px;
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      list-style-type: none;
+      .nav-active {
+        text-decoration: underline;
+        color: $color-1;
+      }
+      .nav-inactive {
+        text-decoration: none;
+        color: $color-1;
+      }
+      li {
+        a {
+          text-decoration: none;
+          padding: 10px;
+          line-height: 34px;
+          color: $color-1;
+          font-family: $font-1;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          cursor: pointer;
+          transition: 0.2s;
         }
-                                .nav-active li {
-                    text-decoration: underline;
-                    color: $color-1;
-        }
+      }
+    }
+  }
+}
 
-                }
+@media screen and (min-width: 200px) and (max-width:395px) {
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 335px;
+    height: 47px;
+    .logo {
+      position: absolute;
+      img {
+        width: 145px;
+        height: 47px;
+      }
+    }
+    .navigation {
+      width: 140px;
+      height: 17px;
+      top: 18px;
+      left: 195px;
+      right: 20px;
+      font-size: 12px;
+      ul {
+        li {
+          a {
+            font-size: 12px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
 }

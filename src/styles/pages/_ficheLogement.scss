@@ -1,141 +1,251 @@
 .carousel {
-    position: absolute;
-    top: 128px;
-    left: 100px;
-    width: 1240px;
-    height: 415px;
-    }
+  position: absolute;
+  top: 128px;
+  left: 100px;
+  width: 1240px;
+  height: 415px;
+}
+
 .titleContent {
-    position: absolute;
-    top: 573px;
-      left: 100px;
+  position: absolute;
+  top: 573px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .titleContenair {
+      display: flex;
+      flex-flow: column nowrap;
+      .title {
+        color: $color-1;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        height: 51px;
+      }
+      .location {
+        color: $color-1;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        height: 26px;
+        margin: 0;
+      }
+  }
+  .host {
     display: flex;
-      align-items: center;
-      justify-content: space-between;
-    
-      .titleContenair {
-        display: flex;
-        flex-flow: column nowrap;
-    
-        .title {
-          color: $color-1;
-          font-size: 36px;
-          font-weight: 500;
-          line-height: 51px;
-          height: 51px;
-        }
-    
-        .location {
-          color: $color-1;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 25px;
-          height: 26px;
-          margin: 0;
-        }
+    flex-direction: row;
+    position: absolute;
+    left: 1078px;
+      .hostName {
+        left: 1170px;
+        font-size: 18px;
+        color: $color-1;
+        font-weight: 500;
+        line-height: 25px;
+        width: 93px;
+        height: 52px;
       }
-    
-      .host {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        left: 1078px;
-    
-        .hostName {
-          left: 1170px;
-          font-size: 18px;
-          color: $color-1;
-          font-weight: 500;
-          line-height: 25px;
-          width: 93px;
-          height: 52px;
-        }
-    
-        .hostPicture {
-          left: 1273px;
-          border-radius: 50%;
-          width: 64px;
-          height: 64px;
-        }
+      .hostPicture {
+        left: 1273px;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
       }
+    }
 }
 
 .tagContent {
   position: absolute;
   top: 670px;
   left: 100px;
+  display: flex;
+  width: auto;
+  .tag {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .tag-text {
+      font-size: 14px;
+      background: $color-1;
+      border-radius: 10px;
       width: auto;
-    
-      .tag {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    
-        .tag-text {
-          font-size: 14px;
-          background: $color-1;
-          border-radius: 10px;
-          width: auto;
-          height: 25px;
-          padding: 5px 15px;
-        }
+      height: 25px;
+      padding: 5px 15px;
       }
-    
-      .rangeContent {
-        display: flex;
-        position: absolute;
-        left: 1084px;
-      }
+    }
+  .rangeContent {
+    display: flex;
+    position: absolute;
+    left: 1084px;
+  }
 }
+
 .equipementContent {
   position: absolute;
   top: 719px;
   left: 100px;
   display: flex;
   gap: 6%;
-    
   .container {
+    width: 582px;
+    margin: 0;
+    summary {
+      height: 52px;
       width: 582px;
-      margin: 0;
-  
-      summary {
-        height: 52px;
-        width: 582px;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 10px;
-        padding: 15px 20px;
-        position: relative;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 10px;
+      padding: 15px 20px;
+      position: relative;
       i {
-          position: absolute;
-          left: 543px;
-          top: 17px;
-        }
-        }
-        .content {
-          width: 582px;
-          height: auto;
-          padding: 10px 15px;
-          margin-top: 15px;
-          border-radius: 10px;
-          position: absolute;
-          top: 30px;
-          z-index: -1;
-            
+        position: absolute;
+        left: 543px;
+        top: 17px;
+      }
+    }
+    .content {
+      width: 582px;
+      height: auto;
+      padding: 10px 15px;
+      margin-top: 15px;
+      border-radius: 10px;
+      position: absolute;
+      top: 30px;
+      z-index: -1;
       span {
           font-size: 18px;
           padding: 10px 15px;
         p {
             font-size: 18px;
           }
-        
           li {
             font-size: 18px;
             color: $color-1;
             list-style-type: none;
           }
+      }
+    }
+  }
+}
+@media screen and (min-width: 200px) and (max-width:395px) {
+  .carousel {
+    top: 94px;
+    left: 20px;
+    width: 335px;
+    height: 255px;
+    .carouselContainer {
+      width: 335px;
+      height: 255px;
+    }
+  }
+  .titleContent {
+    top: 364px;
+    left: 20px;
+    width: 355px;
+    height: 76px;
+    align-items: center;
+    justify-content: flex-start;
+    .titleContenair {
+      margin: 0;
+      .title {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0;
+        height: 46px;
+      }
+      .location {
+        font-size: 14px;
+        line-height: 19px;
+        height: 22px;
+      }
+    }
+    .host {
+      left: 219px;
+      top: 131px;
+      .hostName {
+        width: 70px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .hostPicture{
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  .tagContent {
+    top: 447px;
+    left: 20px;
+    width: 84px;
+    height: 18px;
+    flex-direction: column;
+    .tag {
+      width: 84px;
+      height: 18px;
+      border-radius: 5px;
+      .tag-text {
+        padding: 1px 5px;
+        width: 84px;
+        height: 18px;
+      }
+    }
+    .rangeContent {
+      left: 0px;
+      top: 60px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .equipementContent {
+    top: 550px;
+    left: 20px;
+    flex-direction: column;
+    gap: 0;
+    .container {
+      width: 335px;
+      top: 530px;
+      left: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      details{
+        width: 335px;
+        summary{
+          width: 335px;
+          height: 30px;
+          padding: 5px 14px;
+          margin-top: 5px;
+          i {
+            left: 310px;
+            top: 6px;
+          }
         }
+        .content {
+          width: 335px;
+          padding: 0px 5px;
+          top: -22px;
+          border-radius: 5px;
+          position: relative;
+          span {
+            font-size: 12px;
+            line-height: 17px;
+            p {
+              font-size: 12px;
+            }
+            li {
+              font-size: 12px;
+            }
+          }
         }
-        }
-        }
+      }
+    }
+  }
+  .footer {
+    top: 895px
+  }
+}

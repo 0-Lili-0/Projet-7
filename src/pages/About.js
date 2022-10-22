@@ -3,13 +3,14 @@ import Accordion from '../components/Accordion';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Img from '../media/bannerApropos.png';
+import Img2 from '../media/bannerAboutMobile.png';
 
 const About = () => {
     return (
         <div className='about'>
             <Header />
             <div className="aboutContainer">
-                <img src={Img} alt="montagne" />
+                <div className='bannerAbout'></div>
                 <div className="collapseContainer">
                     <Accordion label='Fiabilité'>
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont

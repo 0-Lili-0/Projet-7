@@ -1,59 +1,91 @@
 .notFound {
-    background: $color-7;
-    position: absolute;
-    max-width: 1240px;
-
-    .errorContent {
-
-
-        .errorNumber {
-            color: $color-1;
-            font-weight: 700;
-            font-size: 288px;
-            line-height: 410px;
-            position: absolute;
-            width: 597px;
-            height: 263px;
-            left: 432px;
-            top: 277px;
-        }
-
-        .errorText {
-            color: $color-1;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 51px;
-            position: absolute;
-            width: 872px;
-            height: 51px;
-            top: 606px;
-            left: 295px;
-        }
-
-
-        nav {
-
-            ul {
-
-                a {
-                    color: $color-1;
-                    cursor: pointer;
-
-                    li {
-                        position: absolute;
-                        width: 284px;
-                        height: 26px;
-                        top: 839px;
-                        left: 578px;
-                        color: $color-1;
-                        font-weight: 500;
-                        font-size: 18px;
-                        list-style-type: none;
-                        text-decoration: underline;
-
-                    }
-                }
-            }
-        }
+  background: $color-7;
+  position: absolute;
+  max-width: 1240px;
+  .errorContent {
+    .errorNumber {
+      color: $color-1;
+      font-weight: 700;
+      font-size: 288px;
+      line-height: 410px;
+      position: absolute;
+      width: 597px;
+      height: 263px;
+      left: 432px;
+      top: 277px;
     }
+    .errorText {
+      color: $color-1;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 51px;
+      position: absolute;
+      width: 872px;
+      height: 51px;
+      top: 606px;
+      left: 295px;
+    }
+    nav {
+      ul {
+        a {
+          color: $color-1;
+          cursor: pointer;
+            li {
+              position: absolute;
+              width: 284px;
+              height: 26px;
+              top: 839px;
+              left: 578px;
+              color: $color-1;
+              font-weight: 500;
+              font-size: 18px;
+              list-style-type: none;
+              text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width:395px){
+  .notFound {
+    max-width: 395px;
+    .errorContent {
+      .errorNumber {
+        width: 198px;
+        height: 99px;
+        top: 262px;
+        left: 88px;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 136px;
+        text-align: center;
+      }
+      .errorText {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        left: 57px;
+        top: 388px;
+        width: 260px;
+        height: 52px;
+        text-align: center;
+      }
+      nav {
+        ul {
+          a {
+            li {
+              width: 221px;
+              height: 20px;
+              top: 557px;
+              left: 76px;
+              font-size: 14px;
+              line-height: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

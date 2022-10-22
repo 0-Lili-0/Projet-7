@@ -1,40 +1,61 @@
 .card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1240px;
+  .cardContent {
+    border-radius: 10px;
+    max-width: 340px;
+    max-height: 340px;
+    margin-top: 56px;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 1240px;
-
-    .cardContent {
+    .cardCover {
+      img {
+        width: 340px;
+        height: 340px;
         border-radius: 10px;
-        max-width: 340px;
-        max-height: 340px;
-        margin-top: 56px;
-        position: relative;
-
-        .cardCover {
-
-            img {
-                width: 340px;
-                height: 340px;
-                border-radius: 10px;
-            }
-
-            img::before {
-                background: $color-4;
-            }
-        }
-
-        .cardTitle {
-            width: 300px;
-            height: 52px;
-            top: 268px;
-            left: 20px;
-            position: absolute;
-            color: $color-8;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 25px;
-        }
+      }
+      img::before {
+        background: $color-4;
+      }
     }
+    .cardTitle {
+      width: 300px;
+      height: 52px;
+      top: 268px;
+      left: 20px;
+      position: absolute;
+      color: $color-8;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width:395px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 335px;
+    .cardContent {
+      width: 335px;
+      height: 255px;
+      margin-top: 1px;
+      .cardCover {
+        img {
+          width: 335px;
+          height: 225px;
+        }
+      }
+    }
+    .cardTitle {
+      width: 295px;
+      height: 52px;
+      top: 188px;
+      left: 19px;
+      font-size: 18px;
+    }
+  }
 }
