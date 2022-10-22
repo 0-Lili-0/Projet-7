@@ -33,7 +33,7 @@
     }
   }
 }
-
+// version mobile
 @media screen and (min-width: 200px) and (max-width:395px) {
   .card {
     display: grid;
@@ -43,6 +43,30 @@
       width: 335px;
       height: 255px;
       margin-top: 1px;
+      .cardCover {
+        img {
+          width: 335px;
+          height: 225px;
+        }
+      }
+    }
+    .cardTitle {
+      width: 295px;
+      height: 52px;
+      top: 188px;
+      left: 19px;
+      font-size: 18px;
+    }
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .cardContent {
+      width: 335px;
+      margin-top: 18px;
       .cardCover {
         img {
           width: 335px;

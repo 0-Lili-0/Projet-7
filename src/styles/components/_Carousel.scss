@@ -68,7 +68,7 @@
       }
     }
 }
-
+// version mobile
 @media screen and (min-width: 200px) and (max-width:395px) {
   .carousel {
     width: 335px;
@@ -107,6 +107,50 @@
           top: 238px;
           left: 166px;
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px) {
+  .carousel {
+    width: 740px;
+    height: 255px;
+    border-radius: 10px;
+    .carouselContainer {
+      width: 740px;
+      height: 255px;
+      .iconeContent {
+        top: 118px;
+        span {
+          font-size: 25px;
+          .fa-chevron-left {
+            left: 10px;
+          }
+          .fa-chevron-right {
+            left: 710px;
+          }
+        }
+      }
+      .imgContent {
+        width: 740px;
+        height: 255px;
+        border-radius: 10px;
+        img {
+          width: 740px;
+          height: 255px;
+          border-radius: 10px;
+          .imageActive {
+            width: 740px;
+            height: 255px;
+            border-radius: 10px;
+          }
+        }
+        .imageNumber {
+          top: 230px;
+          left: 337px;
+          font-size: 14px;
         }
       }
     }

@@ -47,7 +47,7 @@
     }
   }
 }
-
+//version mobile
 @media screen and (min-width: 200px) and (max-width:395px){
   .notFound {
     max-width: 395px;
@@ -81,6 +81,49 @@
               top: 557px;
               left: 76px;
               font-size: 14px;
+              line-height: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//version tablette
+@media screen and (min-width: 396px) and (max-width:840px){
+  .notFound {
+    min-width: 396px;
+    max-width: 840px;
+    .errorContent {
+      .errorNumber {
+        width: 198px;
+        height: 99px;
+        top: 276px;
+        left: 281px;
+        font-size: 147px;
+        font-weight: 700;
+        line-height: 136px;
+        text-align: center;
+      }
+      .errorText {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 39px;
+        left: 262px;
+        top: 439px;
+        width: 277px;
+        height: 52px;
+        text-align: center;
+      }
+      nav {
+        ul {
+          a {
+            li {
+              width: 258px;
+              height: 20px;
+              top: 718px;
+              left: 263px;
+              font-size: 18px;
               line-height: 19px;
             }
           }

@@ -14,7 +14,7 @@
     top: 3315px;
   }
 }
-
+//version mobile
 @media screen and (min-width: 200px) and (max-width:395px) {
   .home {
     .gallery {
@@ -27,6 +27,21 @@
     }
     .footer {
       top: 5340px;
+    }
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px) {
+  .home {
+    .gallery {
+      position: absolute;
+      width: 740px;
+      height: 2490px;
+      top: 310px;
+      left: 50px;
+    }
+    .footer {
+      top: 2825px;
     }
   }
 }

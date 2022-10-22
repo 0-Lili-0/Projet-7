@@ -14,7 +14,7 @@
     }
   }
 }
-
+// version mobile
 @media screen and (min-width: 200px) and (max-width:395px) {
   .tags {
     width: 84px;
@@ -24,6 +24,21 @@
       padding: 1px 5px;
       span {
         font-size: 10px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px) {
+  .tags {
+    width: 95px;
+    height: 22px;
+    .tag-text {
+      height: 22px;
+      padding: 2px 8px;
+      span {
+        font-size: 12px;
         line-height: 14px;
       }
     }

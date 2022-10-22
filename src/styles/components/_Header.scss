@@ -52,7 +52,7 @@
     }
   }
 }
-
+// version mobile
 @media screen and (min-width: 200px) and (max-width:395px) {
   .header {
     position: absolute;
@@ -78,6 +78,39 @@
         li {
           a {
             font-size: 12px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px) {
+  .header {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    max-width: 840px;
+    height: 47px;
+    .logo {
+      position: absolute;
+      img {
+        width: 138px;
+        height: 47px;
+      }
+    }
+    .navigation {
+      width: 140px;
+      height: 17px;
+      top: 7px;
+      left: 606px;
+      right: 20px;
+      font-size: 18px;
+      ul {
+        li {
+          a {
+            font-size: 16px;
             padding: 5px;
           }
         }

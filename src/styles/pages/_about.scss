@@ -56,11 +56,11 @@
   position: absolute;
   top: 1440px;
 }
-
+// version mobile
 @media screen and (min-width: 200px) and (max-width:395px){
   .aboutContainer {
-    .bannerAbout{
-      //background-image: url(../../media.bannerAboutMobile.png);
+    .bannerAbout {
+      background-image: url(../../media.bannerAproposMobile.png);
       width: 336px;
       height: 223px;
       top: 84px;
@@ -100,5 +100,51 @@
   }
   .footer {
     top: 880px;
+  }
+}
+// version tablette
+@media screen and (min-width: 396px) and (max-width: 840px){
+  .aboutContainer {
+    .bannerAbout{
+      //background-image: url(../../media.bannerAboutMobile.png);
+      width: 740px;
+      height: 223px;
+      top: 116px;
+      left: 50px;
+    }
+    .collapseContainer {
+      top: 370px;
+      left: 50px;
+      .container {
+        width: 740px;
+        margin-bottom: 10px;
+        details {
+          summary {
+            height: 45px;
+            width: 740px;
+            padding: 12px 10px;
+            font-size: 16px;
+            i {
+              top: 16px;
+              left: 700px;
+            }
+          }
+          .content {
+            width: 740px;
+            padding: 0;
+            span {
+              font-size: 14px;
+              p{
+              font-size: 14px;
+              padding: 5px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    top: 960px;
   }
 }
