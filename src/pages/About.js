@@ -3,7 +3,7 @@ import Accordion from '../components/Accordion';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Img from '../media/bannerApropos.png';
-import Img2 from '../media/bannerAproposMobile.png';
+import Img2 from '../media/bannerAboutMobile.png';
 
 const About = () => {
     return (

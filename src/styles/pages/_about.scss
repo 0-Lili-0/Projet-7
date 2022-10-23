@@ -60,7 +60,7 @@
 @media screen and (min-width: 200px) and (max-width:395px){
   .aboutContainer {
     .bannerAbout {
-      background-image: url(../../media.bannerAproposMobile.png);
+      background-image: url(../../media/bannerAboutMobile.png);
       width: 336px;
       height: 223px;
       top: 84px;
@@ -106,11 +106,13 @@
 @media screen and (min-width: 396px) and (max-width: 840px){
   .aboutContainer {
     .bannerAbout{
-      //background-image: url(../../media.bannerAboutMobile.png);
+      background-image: url(../../media/bannerApropos.png);
       width: 740px;
       height: 223px;
       top: 116px;
       left: 50px;
+      object-fit: cover;
+      object-position: center;
     }
     .collapseContainer {
       top: 370px;
@@ -145,6 +147,6 @@
     }
   }
   .footer {
-    top: 960px;
+    top: 995px;
   }
 }

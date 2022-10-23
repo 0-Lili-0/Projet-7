@@ -72,6 +72,7 @@
       width: auto;
       height: 25px;
       padding: 5px 15px;
+      white-space: nowrap;
       }
     }
   .rangeContent {
@@ -188,8 +189,9 @@
       border-radius: 5px;
       .tag-text {
         padding: 1px 5px;
-        width: 84px;
+        width: auto;
         height: 18px;
+        white-space: nowrap;
       }
     }
     .rangeContent {
@@ -247,11 +249,10 @@
     }
   }
   .footer {
-    top: 895px
+    top: 940px
   }
 }
 // version tablette
-//version mobile
 @media screen and (min-width: 396px) and (max-width: 840px) {
   .carousel {
     top: 105px;
@@ -277,6 +278,7 @@
         line-height: 25px;
         margin-bottom: 12px;
         height: 46px;
+        margin-left: 0;
       }
       .location {
         font-size: 26px;
@@ -285,13 +287,14 @@
       }
     }
     .host {
-      left: 624px;
+      left: 610px;
       top: 15px;
       .hostName {
         width: 70px;
         height: 33px;
         font-size: 18px;
         line-height: 18px;
+        margin-right: 15px;
       }
       .hostPicture{
         width: 42px;
@@ -311,8 +314,9 @@
       border-radius: 5px;
       .tag-text {
         padding: 4px 8px;
-        width: 98px;
+        width: auto;
         height: 25px;
+        white-space: nowrap;
       }
     }
     .rangeContent {
@@ -370,6 +374,6 @@
     }
   }
   .footer {
-    top: 900px
+    top: 960px
   }
 }
