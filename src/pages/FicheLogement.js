@@ -18,7 +18,7 @@ const FicheLogement = () => {
 
     const { title, location, host, rating, tags, description, equipments } = details;
     const range = [1, 2, 3, 4, 5];
-    const equipmentList = equipments.map((equipment => <li>{equipment}</li>))
+    const equipmentList = equipments.map((equipment => <ul key={equipment.index} ><li>{equipment}</li></ul>))
     return (
         <div>
             <Header />

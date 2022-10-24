@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tag = ({ tags }) => {
-    console.log(tags)
+    
     return (
         <div className='tag'>
             {
@@ -10,7 +10,7 @@ const Tag = ({ tags }) => {
                   <span className='tag-text' key={`${tag}`}>{tag}</span>
                   )
                 })
-            }      
+            }
         </div>
     );
 };
