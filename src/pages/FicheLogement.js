@@ -18,7 +18,7 @@ const FicheLogement = () => {
 
     const { title, location, host, rating, tags, description, equipments } = details;
     const range = [1, 2, 3, 4, 5];
-    const equipmentList = equipments.map((equipment => <ul key={equipment.index} ><li>{equipment}</li></ul>))
+    const equipmentList = equipments.map((equipment => <ul key={equipment} ><li>{equipment}</li></ul>))
     return (
         <div>
             <Header />
@@ -57,7 +57,7 @@ const FicheLogement = () => {
                     <p>{description}</p>
                 </Accordion>
                 <Accordion label="Equipements">
-                    <li className='listeEquipments'>{equipmentList}</li>
+                    <ul><li className='listeEquipments'>{equipmentList}</li></ul>
                 </Accordion>
             </div>
             <Footer />

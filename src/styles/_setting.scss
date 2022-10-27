@@ -16,9 +16,14 @@ $color-8: #FFFFFF;
 * {
     box-sizing: border-box;
     margin: auto;
-    max-width: 1440px;
+    //width: 100%;
     font-family: $font-1;
     color: $color-6;
     padding: 0;
     height: auto;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
